@@ -12,6 +12,7 @@ header{
 }
 #highlight {
     background-color:yellow;
+    font-weight:bold;
 }
 #remove{
     text-decoration: underline;
