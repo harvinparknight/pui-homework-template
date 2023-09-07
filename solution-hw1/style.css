@@ -1,6 +1,14 @@
+/** high-level **/
+
+body{
+    text-align:center;
+}
+header{
+    margin:40px;
+}
 /** text edits **/
 #underline{
-    text-decoration:underline
+    text-decoration:underline;
 }
 #highlight {
     background-color:yellow;
@@ -12,7 +20,7 @@
 #button{
     width: 300px;
     border: 30px black;
-    fill:yellow;
+    background-color:yellow;
     padding: 50px;
     margin: 20px;
 }
