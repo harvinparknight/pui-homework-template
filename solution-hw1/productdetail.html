@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <meta charset="UTF-8">
-  <title>Page Title</title>
+  <title>Product Detail page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
   
   <body>
 
-    <h1>I am the solution to HW1!</h1>
+    <a href="productgallery.html"> 
+      <img id="logo" src="../assets/logo/logo-01.svg">    
+    </a> 
+    
+    <hr>
 
-    <p>
-        And I can link to <a href="./otherpage.html">other pages.</a>
-    </p>
+    <div id="sidebar">
+      <a href="productgallery.html">
+        <p id="highlight"> Products </p>
+      </a>
+      <a href="shoppingcart.html">
+        <p> Cart </p>
+      </a>
+    </div>
+
+    <div id="detailContent">
+      <h1>Original cinnamon roll</h1>
+      <img id="bun" src="../assets/products/original-cinnamon-roll.jpg" alt="original cinammon roll">
+      <p>Customize our delicious,
+        hand-made cinnamon roll to
+        your liking!</p>
+
+      <label for="glazing">Glazing:
+      </label>
+      <select name="glazing" id="glazing">
+        <option value="Keep original">Keep original</option>
+        <option value="Sugar milk">Sugar milk</option>
+        <option value="Vanilla milk">Vanilla milk</option>
+        <option value="Double chocolate">Double chocolate</option>
+      </select>
+
+      <label for="pack-size">Pack size:
+      </label>
+      <select name="pack-size" id="pack-size">
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="6">6</option>
+        <option value="12">12</option>
+      </select>
+
+      <p>$2.49</p>
+      <p>Add to cart</p>
+    </div>
 
   </body>
+
 </html>

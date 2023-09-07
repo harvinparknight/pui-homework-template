@@ -1,0 +1,37 @@
+/** text edits **/
+#underline{
+    text-decoration:underline
+}
+#highlight {
+    background-color:yellow;
+}
+#remove{
+    text-decoration: underline;
+    font-size: 8px;
+}
+#button{
+    width: 300px;
+    border: 30px black;
+    fill:yellow;
+    padding: 50px;
+    margin: 20px;
+}
+/** image sizes **/
+#logo {
+    width: 400px;
+}
+
+#galleryContent img{
+    width: 400px;
+    height: 400px;
+}
+
+#detailContent img{
+    width: 600px;
+    height: 600px;
+}
+
+#cartContent img{
+    width: 200px;
+    height: 200px;
+}
