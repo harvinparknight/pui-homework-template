@@ -48,8 +48,9 @@ h1{
     display:block;
     width:fit-content;
     background-color:yellow;
-    padding: 5px;
+    padding: 5px 5px 1px 5px;
 }
+
 .option .bold{
     text-decoration:underline;
 }
