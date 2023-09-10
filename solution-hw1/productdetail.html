@@ -7,50 +7,50 @@
   <body>
 
     <a href="productgallery.html"> 
-      <img id="logo" src="../assets/logo/logo-01.svg">    
+      <img id="logo" src="../assets/logo/logo-01.svg" alt="logo">    
     </a> 
     
     <hr>
+    <div id="content">
+      <div id="sidebar">
+        <a href="productgallery.html">
+          <p><span id="highlight">PRODUCTS</span></p>
+        </a>
+        <a href="shoppingcart.html">
+          <p>CART</p>
+        </a>
+      </div>
 
-    <div id="sidebar">
-      <a href="productgallery.html">
-        <p id="highlight">PRODUCTS</p>
-      </a>
-      <a href="shoppingcart.html">
-        <p>CART</p>
-      </a>
+      <div id="detailContent">
+        <h1>Original cinnamon roll</h1>
+        <img id="bun" src="../assets/products/original-cinnamon-roll.jpg" alt="original cinammon roll">
+        <div id="detailText" class="leftalign">
+          <p>Customize our delicious,<br> 
+             hand-made cinnamon roll to 
+             <br> your liking!</p>
+          <br>
+          
+          <label>Glazing: <br></label>
+          <select name="glazing" class="customselect">
+            <option value="Keep original">Keep original</option>
+            <option value="Sugar milk">Sugar milk</option>
+            <option value="Vanilla milk">Vanilla milk</option>
+            <option value="Double chocolate">Double chocolate</option>
+          </select>
+
+          <br> <br>
+
+          <label>Pack size:<br></label>
+          <select name="pack-size" class="customselect">
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option value="6">6</option>
+            <option value="12">12</option>
+          </select>
+          </div>
+        <p>$2.49<span id="buttonspan">Add to cart</span></p>
+      </div>
     </div>
-
-    <div id="detailContent">
-      <h1>Original cinnamon roll</h1>
-      <img id="bun" src="../assets/products/original-cinnamon-roll.jpg" alt="original cinammon roll">
-      <p>Customize our delicious,
-        hand-made cinnamon roll to
-        your liking!</p>
-
-      <label for="glazing">Glazing:
-      </label>
-      <select name="glazing" id="glazing">
-        <option value="Keep original">Keep original</option>
-        <option value="Sugar milk">Sugar milk</option>
-        <option value="Vanilla milk">Vanilla milk</option>
-        <option value="Double chocolate">Double chocolate</option>
-      </select>
-
-      <br>
-
-      <label for="pack-size">Pack size:
-      </label>
-      <select name="pack-size" id="pack-size">
-        <option value="1">1</option>
-        <option value="3">3</option>
-        <option value="6">6</option>
-        <option value="12">12</option>
-      </select>
-
-      <p>$2.49 <span id="button">Add to cart</span></p>
-    </div>
-
   </body>
 
 </html>
