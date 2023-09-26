@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <title>Product Detail page</title>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="js/script.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+
+
+    <div id="header">
+      <a id="home" href="productgallery.html"> 
+        <img id="logo" src="../assets/logo/logo-01.svg" alt="logo">    
+      </a>
+
+      <div class="break"></div>
+
+      <div id="menu-items">
+        <a href="productgallery.html" class="space">
+          <p><span id=highlight>PRODUCTS</span></p>
+        </a>
+        <a href="shoppingcart.html" class="space">
+          <p>CART</p>
+        </a>
+      </div>
+
+      <hr class="full-width">
+      <h1>Original cinammon roll</h1>
+    </div>
+    
+    
+
+    <div id="content">
+
+      <div id="detailContent">
+        <img id="bun" src="../assets/products/original-cinnamon-roll.jpg" alt="original cinammon roll">
+
+        <div id="detailInfo">
+          <div id="detailText" class="leftalign">
+            <p>Customize our delicious,<br> 
+              hand-made cinnamon roll to <br> 
+              your liking!</p>
+            <br>
+            
+            <label>Glazing: <br></label>
+            <select id="glazingOptions" onchange="glazingChange(this)" class="customselect">
+            </select>
+
+            <br> <br>
+
+            <label>Pack size:<br></label>
+            <select id="packOptions" onchange="packChange(this)" class="customselect">
+            </select>
+          </div>
+          
+          <br> <br> <br>
+
+          <p id="price">$<span id="dynamicprice">2.49</span><span id="buttonspan">Add to cart</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
