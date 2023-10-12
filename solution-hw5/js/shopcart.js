@@ -98,7 +98,7 @@ function updateElement(roll) {
     imgElement.alt = "image of " + roll.type + " cinnamon roll";
 
     roll.element.querySelector(".product-name").innerText = roll.type + " Cinnamon Roll";
-    roll.element.querySelector(".glazing").innerText = "Glazing: " + roll.glazing;
+    roll.element.querySelector(".glazing").innerText = roll.glazing;
     roll.element.querySelector(".pack-size").innerText = "Pack Size: " + roll.size;
     roll.element.querySelector(".price").innerText = "$" + roll.rollPrice;
 }
