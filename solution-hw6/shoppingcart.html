@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Shoppping Cart</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="js/rollsData.js" type="text/javascript" defer></script>
+    <script src="js/shopcart.js" type="text/javascript" defer></script>
+  </head>
+
+  <body>
+
+    <div id="header">
+      <a id="home" href="productgallery.html"> 
+        <img id="logo" src="../assets/logo/logo-01.svg" alt="logo">    
+      </a>
+
+      <div class="break"></div>
+
+      <div id="menu-items">
+        <a href="productgallery.html" class="space">
+          <p>PRODUCTS</p>
+        </a>
+        <a href="shoppingcart.html" class="space">
+          <p><span id=highlight>CART</span></p>
+        </a>
+      </div>
+
+      <hr class="full-width">
+      <h1>Shopping Cart</h1>
+    </div>
+    <div id="marginright">
+      <div id="contentforcart">
+        <div id="cartContent">
+          <template id="cartItemTemplate">
+            <div id="cartBlock">
+                <img src="" alt="">
+
+                <div id="miniContainer">
+                  <div>
+                    <p class="product-name">Product Name</p>
+                    <p class="glazing">Glazing:</p>
+                    <p class="pack-size">Pack size:</p>
+                  </div>
+                  <p class="price">$ 27.45</p>
+                </div>
+                
+                <div class="break"></div>
+                <p class="remove">Remove</p>
+                <div class="break"></div>
+            </div>
+          </template>
+          <div id ="cartItemHolder"></div>
+
+      
+        </div>
+
+        <hr>
+        
+        <div id="miniercontainer">
+          <p id="total-cart">Total</p>
+          <p id="calculated-cart-total" class="font20">$ 29.94</p>
+          <div class="break"></div>
+        </div>
+        <div id="miniestcontainer">
+          <p id="buttoncart">Checkout</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

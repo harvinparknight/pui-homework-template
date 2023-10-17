@@ -13,11 +13,7 @@ class Roll {
     }
 }
 
-function addToCart() {
-    let newRoll = new Roll(rollType, rollGlazing, packSize, basePrice);
-    cart.push(newRoll);
-    console.log(cart);
-}
+
 
 
 //customizing the page depending on the roll clicked
@@ -86,7 +82,7 @@ function glazingChange(element) {
     const priceChange = element.value;
     glazingPrice = parseFloat(priceChange);
     let finalPrice = document.querySelector('#dynamicprice');
-    calc = (basePrice + glazingPrice) * packMultiplier;
+    let calc = (basePrice + glazingPrice) * packMultiplier;
     calc = calc.toFixed(2);
     finalPrice.innerText = calc;
 
@@ -97,13 +93,48 @@ function glazingChange(element) {
 //change price for pack change
 function packChange(element) {
     const multiplierChange = element.value;
-    packMultiplier = parseFloat(multiplierChange)
+    packMultiplier = parseFloat(multiplierChange);
     let finalPrice = document.querySelector('#dynamicprice');
-    calc = (basePrice + glazingPrice) * packMultiplier;
+    let calc = (basePrice + glazingPrice) * packMultiplier;
     calc = calc.toFixed(2);
     finalPrice.innerText = calc;
 
     packSize = selectPack.options[selectPack.selectedIndex].textContent;
 }
 
+// json time
+function addToCart(rollType,rollGlazing,packSize, basePrice) {
+    let newRoll = new Roll(rollType, rollGlazing, packSize, basePrice);
+    cart.push(newRoll);
+}
 
+//for when button is pushed so that it can trigger storage update
+function addSaveToCart() {
+    let newRoll = new Roll(rollType, rollGlazing, packSize, basePrice);
+    cart.push(newRoll);
+    saveToLocalStorage();
+}
+
+function saveToLocalStorage() {
+    console.log("now I'm saving!");
+    const rollArray = cart;
+
+    const rollArrayString = JSON.stringify(rollArray);
+    console.log(rollArrayString);
+  
+    localStorage.setItem('storedRolls', rollArrayString);
+}
+
+function retrieveFromLocalStorage() {
+    const rollArrayString = localStorage.getItem('storedRolls');
+    let rollArray = [];
+    if (rollArrayString){
+        rollArray = JSON.parse(rollArrayString);
+    }
+    for (const rollData of rollArray) {
+        addToCart(rollData.type, rollData.glazing,
+        rollData.size, rollData.rollPrice);
+    }
+}
+
+retrieveFromLocalStorage();
